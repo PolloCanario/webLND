@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon-96x96.png" type="image/x-icon">
+</head>
+<body>
+    
+    <h1 id="Inicio">La web de las artes</h1>
+
+    <h2>SECCIÓN: Contáctanos</h2>
+
+    <ul>
+        <li> <a href="../index.html">Inicio</a></li>
+        <li><a href="musica.html">Música</a></li>
+        <li><a href="cine.html">Cine</a></li>
+        <li><a href="generosLiterarios.html">Géneros Literarios</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+    </ul>
+    
+    <hr>
+    
+    <form name="Datos" method="post" >
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>    
+                <label>
+                    Nombre:
+                    <input type="text" name="Nombre" placeholder="Introduce tu nombre" required pattern="[A-Za-z]*">
+                </label>
+            </p>
+           <p>  
+                <label>
+                    Apellidos:
+                    <input type="text" name="Apellidos" placeholder="Intrudce tu apellido" required pattern="[A-Za-z]*">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Email:
+                    <input type="email" name="Email" placeholder="usuario@email.com" required pattern="[a-zA-Z0-9._%+-]?@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Fecha de Nacimiento:
+                    <input type="date" name="Fecha">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Edad:
+                    <input type="number" name="Edad" id="Edad" min="18" max="100" >
+                </label>
+            </p>
+            
+
+            <p>
+                Sexo:
+                <input type="radio" name="Sexo" value="H">Hombre
+                <input type="radio" name="Sexo" value="M">Mujer
+                <input type="radio" name="Sexo" value="X">Por definir
+            </p>
+
+            <p>
+                País:
+                <select name="pais" id="pais">
+                    <option value="" selected="selected">-Selecciona-</option>
+                    <option value="España">España</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Andorra">Andorra</option>
+                </select>
+            </p>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Otros Datos</legend>
+
+            <p>
+                Mensaje:
+                <textarea name="Mensaje" cols="60" rows="10" spellcheck="true" placeholder="Introduce tu mensaje..."></textarea>
+            </p>
+
+            <p>
+                Adjunta una foto... <input type="file" name="adjunto" accept=".jpg,.png">
+            </p>
+            
+        </fieldset>
+        <p>
+            <input type="checkbox" name="condiciones" checked> He leído las condiciones...
+        </p>
+        <button type="submit" value="Enviar formulario">Enviar</button>
+        <button type="reset" value="Limpiar formulario">Limpiar</button>
+    </form>
+
+    <h2>Centro de referencia</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7794477103666!2d-16.2832455!3d28.4560642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708093269477!5m2!1ses!2ses" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <hr>
+
+    <p>
+        <a href="#Inicio">Inicio</a>
+    </p>
+</body>
+</html>
